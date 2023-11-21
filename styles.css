@@ -1,0 +1,45 @@
+.icon {
+    height: 40px;
+    width: 40px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    border: 1px solid gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-img {
+    width: 250px;
+    height: 350px;
+    object-fit: cover;
+    object-position: 100% 100%;
+}
+
+.footer-link {
+    text-decoration: none;
+    color: black;
+}
+
+@media (max-width: 500px) {
+    .banner {
+        height: 100vh;
+    }
+
+    .banner-img {
+        height: 500px;
+    }
+
+    .footer {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .footer-text {
+        display: flex;
+        float:none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
